@@ -1,4 +1,5 @@
 import discord
+import os
 import asyncio
 from discord.ext import commands
 import random
@@ -56,4 +57,4 @@ async def Rndcode(ctx) :
     await bot.say(random.choice(["PUSPUS",
 "Nope","Why Even Try?","Just Stop","Yawn","You Can't Win","STOP IT","666.666","ha ha!","Incorrect","NANI!?","/RubRubRubRubRub","ChewTop","Damk memes","lol nub","Nah","Kappa","(⍤ᴥ⍤)","¯\_(ツ)_/¯",":thinking:",":b:",":joy: You Can't Do It Lmfao!","666.665","666.66","666.661"]))
 
-bot.run("NDE2OTI1MDY0NzM1MzU4OTc2.DXLtUw.gamNH5NaQJG5WuMcXvKDWNd2lls")
+bot.run(os.getenv(TOKEN))
