@@ -57,4 +57,9 @@ async def Rndcode(ctx) :
     await bot.say(random.choice(["PUSPUS",
 "Nope","Why Even Try?","Just Stop","Yawn","You Can't Win","STOP IT","666.666","ha ha!","Incorrect","NANI!?","/RubRubRubRubRub","ChewTop","Damk memes","lol nub","Nah","Kappa","(⍤ᴥ⍤)","¯\_(ツ)_/¯",":thinking:",":b:",":joy: You Can't Do It Lmfao!","666.665","666.66","666.661"]))
 
+@bot.command(pass_context=True)
+async def kick(ctx, user: discord.Member):
+    await bot.say(" So long, fare well!".format(user.name))
+    await bot.kick(user)
+   
 bot.run(os.getenv('TOKEN'))
